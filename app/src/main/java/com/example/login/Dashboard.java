@@ -123,7 +123,7 @@ public class Dashboard extends AppCompatActivity {
             lblNombre.setText(objects.get(position).getNombre());
             lblTelefono.setText(objects.get(position).getTelefono1());
             lblNotas.setText(objects.get(position).getNotas());
-
+//finish
             btnBorrar.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

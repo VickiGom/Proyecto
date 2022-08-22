@@ -3,6 +3,25 @@
     <string name="user">Usuario</string>
     <string name="password">Contraseña</string>
     <string name="ingresar">Ingresar</string>
-    <string name="registrar">O Registrar</string>
-    <string name="obtener_contraseña">¿Se te olvido la contraseña? Click Aqui</string>
+    <string-array name="Usuarios">
+        <item>Victor</item>
+        <item>Mario</item>
+        <item>Pedro</item>
+        <item>Jorge</item>
+        <item>Maria</item>
+    </string-array>
+    <string-array name="Telefono">
+        <item>6692754151</item>
+        <item>6692563814</item>
+        <item>6695323241</item>
+        <item>6691324524</item>
+        <item>6692524174</item>
+    </string-array>
+    <string-array name="Malestar">
+        <item>Dolor de muela</item>
+        <item>Carie</item>
+        <item>Bracket</item>
+        <item>Radiografia</item>
+        <item>Dolor de diente</item>
+    </string-array>
 </resources>

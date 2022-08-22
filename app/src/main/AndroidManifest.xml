@@ -10,6 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".SecondActivity"
+            android:exported="false"
+            android:parentActivityName=".UsuariosActivity"
+            android:label="Details"/>
+        <activity
             android:name=".UsuariosActivity"
             android:exported="false" />
         <activity android:name=".MainActivity">

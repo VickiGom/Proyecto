@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fondo_01"
+    android:padding="15dp"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="115dp"
+        android:layout_height="13dp"
+        android:layout_weight="10"
+        android:translationX="125dp"
+        android:translationY="-100dp"
+        app:srcCompat="@mipmap/log" />
+
+    <EditText
+        android:id="@+id/editTextUser"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+
+        android:layout_marginBottom="15dp"
+
+        android:layout_weight="1"
+        android:background="@drawable/edt_style"
+        android:drawableLeft="@drawable/usuario_5"
+        android:drawablePadding="5dp"
+
+        android:ems="10"
+        android:hint="@string/user"
+
+        android:inputType="textPersonName"
+        android:translationY="-230dp" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+
+        android:layout_marginBottom="20dp"
+        android:layout_weight="1"
+
+        android:background="@drawable/edt_style"
+        android:drawableLeft="@drawable/bloquear"
+        android:drawablePadding="10dp"
+
+        android:ems="10"
+        android:hint="@string/password"
+
+        android:inputType="textPassword"
+        android:translationY="-230dp" />
+
+    <Button
+        android:id="@+id/buttonIngresar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+
+        android:layout_marginBottom="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/btn_style"
+
+        android:text="@string/ingresar"
+
+        android:textColor="@color/blanco"
+        android:translationY="-210dp" />
+
+
+</LinearLayout>

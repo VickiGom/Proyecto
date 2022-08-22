@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AgregarPacientes"
+    android:background="@drawable/fondo_01">
+
+
+    <TableLayout
+        android:id="@+id/tabla1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="*"
+        tools:context="${relativePackage}.${activityClass}" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:text="Nombre" />
+        <EditText
+            android:id="@+id/txtNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:inputType="textPersonName"
+            android:background="@drawable/edt_style"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+
+            android:layout_marginBottom="5dp">
+            <requestFocus />
+        </EditText>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Telefono Celular" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edad" />
+        </TableRow>
+        <TableRow>
+            <EditText
+                android:id="@+id/txtTelefono1"
+                android:layout_width="144dp"
+                android:layout_height="wrap_content"
+                android:ems="10" android:inputType="phone"
+                android:background="@drawable/edt_style"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+
+                android:layout_marginBottom="5dp"
+                />
+            <EditText
+                android:id="@+id/txtEdad"
+                android:layout_width="144dp"
+                android:layout_height="wrap_content"
+                android:ems="10" android:inputType="number"
+                android:background="@drawable/edt_style"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+
+                android:layout_marginBottom="5dp"
+                />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Correo Electronico" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ocupacion" />
+        </TableRow>
+        <TableRow>
+            <EditText
+                android:id="@+id/txtCorreo"
+                android:layout_width="144dp"
+                android:layout_height="wrap_content"
+                android:ems="10" android:inputType="textEmailAddress"
+                android:background="@drawable/edt_style"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+
+                android:layout_marginBottom="5dp"
+                />
+            <EditText
+                android:id="@+id/txtOcupacion"
+                android:layout_width="144dp"
+                android:layout_height="wrap_content"
+                android:ems="10" android:inputType="text"
+                android:background="@drawable/edt_style"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+
+                android:layout_marginBottom="5dp"
+                />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sexo" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estado Civil" />
+        </TableRow>
+        <TableRow>
+            <EditText
+                android:id="@+id/txtSexo"
+                android:layout_width="144dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edt_style"
+                android:ems="10" android:inputType="text"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+
+                android:layout_marginBottom="5dp"
+                />
+            <EditText
+                android:id="@+id/txtEstadoCivil"
+                android:layout_width="144dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edt_style"
+                android:ems="10" android:inputType="text"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+
+                android:layout_marginBottom="5dp"
+                />
+        </TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_span="2"
+            android:text="Direccion"
+/>
+        <EditText
+            android:id="@+id/txtDireccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:background="@drawable/edt_style"
+            android:inputType="textPostalAddress"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+
+            android:layout_marginBottom="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:text="Notas" />
+        <EditText
+            android:id="@+id/txtNotas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.97"
+            android:background="@drawable/edt_style"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+
+            android:layout_marginBottom="5dp"/>
+        <TableRow >
+            <Button
+                android:id="@+id/btnLimpiar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Limpiar"
+                android:background="@drawable/btn_style"
+                android:textColor="@color/blanco"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+
+                android:layout_marginBottom="5dp"/>
+            <Button
+                android:id="@+id/btnGuardar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Guardar"
+                android:background="@drawable/btn_style"
+                android:textColor="@color/blanco"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+
+                android:layout_marginBottom="5dp"/>
+        </TableRow>
+
+        <Button
+            android:id="@+id/btnDash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dashboard"
+            android:background="@drawable/btn_style"
+            android:textColor="@color/blanco"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+
+            android:layout_marginBottom="5dp"/>
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

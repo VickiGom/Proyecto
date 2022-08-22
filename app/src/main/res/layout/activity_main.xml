@@ -69,10 +69,10 @@
         android:layout_marginBottom="5dp"
         android:layout_weight="1"
         android:background="@drawable/btn_style"
-
+        android:textColor="@color/blanco"
         android:text="@string/ingresar"
 
-        android:textColor="@color/blanco"
+
         android:translationY="-210dp" />
 
 

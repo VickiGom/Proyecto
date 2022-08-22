@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.login">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,12 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".SecondActivity"
-            android:exported="false"
-            android:parentActivityName=".UsuariosActivity"
-            android:label="Details"/>
+            android:name=".Dashboard"
+            android:exported="false" />
         <activity
-            android:name=".UsuariosActivity"
+            android:name=".AgregarPacientes"
             android:exported="false" />
         <activity android:name=".MainActivity">
             <intent-filter>
